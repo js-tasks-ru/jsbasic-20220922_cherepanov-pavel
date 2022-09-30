@@ -1,4 +1,5 @@
 function factorial(n) {
+
   let res = 1;
 
   if (n === 0 || n === 1) {

@@ -3,8 +3,15 @@ function print(text) {
 }
 
 function isValid(name) {
-  return !!name && !name.includes(' ') && name.length >= 4;
-}
+
+  // ваш код...
+  if (name !== null && !name.includes(' ') && name.length >= 4) {
+    name = true;
+  } else  {
+    name = false;
+  } 
+  return name;
+} 
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
